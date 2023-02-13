@@ -10,6 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 var ConStr = builder.Configuration.GetConnectionString("ConStr");
 builder.Services.AddDbContext<Contexto>(options => options.UseSqlite(ConStr));
+builder.Services.AddScoped<LibrosBLL>();
 
 
 var app = builder.Build();
