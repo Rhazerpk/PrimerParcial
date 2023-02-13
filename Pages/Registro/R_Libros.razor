@@ -1,36 +1,85 @@
 @page "/libros"
-   
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+@inject LibrosBLL librosBll
+
+<EditForm Model="libros" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <div class="card">
         <div class="card-header">
             <h3>Registro de Libros</h3>
         </div>
         
             <div class="form-group">
-                <label>Libro ID</label>
-                <input Number="number" class="form-control" id="inputLibro" aria-describedby="ID">
-                <button type="button"  class="bi bi-search btn btn-primary input-group-text" ></button>
+                <label>LibroID</label>
+                <InputNumber @bind-Value="libros.LibroId" class="form-control" />
+                <button type="button" class="bi bi-search btn btn-primary input-group-text" @onclick="Buscar" ></button>
+                <ValidationMessage For="@(() => libros.LibroId)" />
              </div>
             
             <div class="form-group">
-                <label>Titulo</label>
-                <input type="text" class="form-control" id="inputTitulo" aria-describedby="Titulo">
+                <label>Título</label>
+                <InputText @bind-Value="libros.Titulo" class="form-control" />
+                <ValidationMessage For="@(() => libros.Titulo)" />
             </div>
 
             <div class="form-group">
                 <label>Precio</label>
-                <input Number="number" class="form-control" id="inputPrecio" aria-describedby="Precio">
+                <InputNumber @bind-Value="libros.Precio" class="form-control" />
+                <ValidationMessage For="@(() => libros.Precio)" />
             </div>
+
         </div>
         <div class="card-footer">
             <div class="form-group text-center" display: inline-block>
-                <button type="submit" class="bi bi-file-earmark-fill btn btn-lg btn-primary" > Nuevo</button>
-                <button type="submit" class="bi bi-file-earmark-text-fill btn btn-lg btn-success"> Guardar</button>
+                <button type="submit" class="bi bi-file-earmark-fill btn btn-lg btn-primary"  @onclick="Nuevo"> Nuevo</button>
+                <button type="submit" class="bi bi-file-earmark-text-fill btn btn-lg btn-success" @onclick="Guardar"> Guardar</button>
                 <button type="submit" class="bi bi-trash btn btn-lg btn-danger">Eliminar</button>
             </div>
-
         </div>
 
+</EditForm>
+
 @code {
+
+    [Parameter]
+
+    public int LibroId { get; set; }
+    public Libros libros { get; set; } = new Libros();
+    
+    protected override void OnInitialized()
+    {
+        if(LibroId > 0)
+        {
+            this.libros.LibroId = LibroId;
+            this.Buscar();
+        }
+    }
+
+    public void Buscar()
+    {
+        var libroEncontrado = librosBll.Buscar(libros.LibroId);
+
+        if(libroEncontrado != null)
+        {
+            this.libros = libroEncontrado;
+        }
+    }
+
+    public void Nuevo()
+    {
+        this.libros = new Libros();
+    }
+
+    public void Guardar()
+    {
+       var guardado = librosBll.Guardar(libros);
+
+        if (guardado)
+        {
+            Nuevo();
+        }
+    }
 
 }
