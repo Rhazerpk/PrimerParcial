@@ -124,6 +124,43 @@
         }
       },
       {
+        "HashCode": 1274254770,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.Pages.Registro.R_Libros",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "R_Libros"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.Pages.Registro.R_Libros",
+          "Common.TypeNamespace": "PrimerParcial.Pages.Registro",
+          "Common.TypeNameIdentifier": "R_Libros"
+        }
+      },
+      {
+        "HashCode": -256465587,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.Pages.Registro.R_Libros",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrimerParcial.Pages.Registro.R_Libros"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.Pages.Registro.R_Libros",
+          "Common.TypeNamespace": "PrimerParcial.Pages.Registro",
+          "Common.TypeNameIdentifier": "R_Libros",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 100627598,
         "Kind": "Components.Component",
         "Name": "PrimerParcial.Shared.SurveyPrompt",
@@ -18767,6 +18804,11 @@
       "FilePath": "c:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\Pages\\Registro\\R_Libros.razor",
+      "TargetPath": "Pages\\Registro\\R_Libros.razor",
+      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\Pages\\Index.razor",
