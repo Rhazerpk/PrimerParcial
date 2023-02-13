@@ -124,43 +124,6 @@
         }
       },
       {
-        "HashCode": 1333337706,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.App",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.App",
-          "Common.TypeNamespace": "PrimerParcial",
-          "Common.TypeNameIdentifier": "App"
-        }
-      },
-      {
-        "HashCode": -1971644934,
-        "Kind": "Components.Component",
-        "Name": "PrimerParcial.App",
-        "AssemblyName": "PrimerParcial",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PrimerParcial.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "PrimerParcial.App",
-          "Common.TypeNamespace": "PrimerParcial",
-          "Common.TypeNameIdentifier": "App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 100627598,
         "Kind": "Components.Component",
         "Name": "PrimerParcial.Shared.SurveyPrompt",
@@ -359,6 +322,43 @@
           "Common.TypeName": "PrimerParcial.Shared.NavMenu",
           "Common.TypeNamespace": "PrimerParcial.Shared",
           "Common.TypeNameIdentifier": "NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1333337706,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.App",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.App",
+          "Common.TypeNamespace": "PrimerParcial",
+          "Common.TypeNameIdentifier": "App"
+        }
+      },
+      {
+        "HashCode": -1971644934,
+        "Kind": "Components.Component",
+        "Name": "PrimerParcial.App",
+        "AssemblyName": "PrimerParcial",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PrimerParcial.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "PrimerParcial.App",
+          "Common.TypeNamespace": "PrimerParcial",
+          "Common.TypeNameIdentifier": "App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
