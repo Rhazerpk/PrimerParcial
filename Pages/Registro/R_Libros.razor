@@ -14,7 +14,7 @@
             <div class="form-group">
                 <label>LibroID</label>
                 <InputNumber @bind-Value="libros.LibroId" class="form-control" />
-                <button type="button" class="bi bi-search btn btn-primary input-group-text" @onclick="Buscar" ></button>
+                <button type="button" class="btn btn-primary input-group-text"@onclick="Buscar"><i class="oi oi-magnifying-glass" /></button>
                 <ValidationMessage For="@(() => libros.LibroId)" />
              </div>
             
