@@ -37,6 +37,12 @@ public class LibrosBLL{
             return this.Modificar(libros);
     }
 
+    public bool Eliminar(Libros libros)
+    {
+        _contexto.Entry(libros).State = EntityState.Deleted;
+        return _contexto.SaveChanges() > 0;
+    }
+
     public Libros? Buscar(int LibroId)
     {
         return _contexto.libros

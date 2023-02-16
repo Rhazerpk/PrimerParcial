@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\PrimerParcial.csproj": {}
+    "C:\\Users\\elpri\\OneDrive\\Desktop\\Progamacion aplicada I\\PrimerParcial\\PrimerParcial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\PrimerParcial.csproj": {
+    "C:\\Users\\elpri\\OneDrive\\Desktop\\Progamacion aplicada I\\PrimerParcial\\PrimerParcial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\PrimerParcial.csproj",
+        "projectUniqueName": "C:\\Users\\elpri\\OneDrive\\Desktop\\Progamacion aplicada I\\PrimerParcial\\PrimerParcial.csproj",
         "projectName": "PrimerParcial",
-        "projectPath": "C:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\PrimerParcial.csproj",
+        "projectPath": "C:\\Users\\elpri\\OneDrive\\Desktop\\Progamacion aplicada I\\PrimerParcial\\PrimerParcial.csproj",
         "packagesPath": "C:\\Users\\elpri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elpri\\OneDrive\\Desktop\\PrimerParcial\\obj\\",
+        "outputPath": "C:\\Users\\elpri\\OneDrive\\Desktop\\Progamacion aplicada I\\PrimerParcial\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elpri\\AppData\\Roaming\\NuGet\\NuGet.Config",
