@@ -25,6 +25,7 @@ namespace PrimerParcial.Migrations
                         .HasColumnType("REAL");
 
                     b.Property<string>("Titulo")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("LibroId");

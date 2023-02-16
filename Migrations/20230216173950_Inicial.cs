@@ -16,7 +16,7 @@ namespace PrimerParcial.Migrations
                 {
                     LibroId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Titulo = table.Column<string>(type: "TEXT", nullable: true),
+                    Titulo = table.Column<string>(type: "TEXT", nullable: false),
                     Precio = table.Column<double>(type: "REAL", nullable: false)
                 },
                 constraints: table =>

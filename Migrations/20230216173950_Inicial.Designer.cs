@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PrimerParcial.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20230213225029_Inicial")]
+    [Migration("20230216173950_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -28,6 +28,7 @@ namespace PrimerParcial.Migrations
                         .HasColumnType("REAL");
 
                     b.Property<string>("Titulo")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("LibroId");
